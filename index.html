@@ -4,6 +4,8 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Xylofy – Digital Agency</title>
+<link rel="icon" type="image/jpeg" href="https://i.ibb.co/cWpWzhB/xylofy-logo.jpg"/>
+<link rel="apple-touch-icon" href="https://i.ibb.co/cWpWzhB/xylofy-logo.jpg"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <style>
@@ -19,7 +21,11 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);overf
 
 /* NAV */
 nav{position:fixed;top:0;width:100%;z-index:100;padding:16px 5%;display:flex;align-items:center;justify-content:space-between;background:rgba(3,7,18,0.85);backdrop-filter:blur(20px);border-bottom:1px solid var(--glassborder)}
-.nav-logo img{height:44px;object-fit:contain}
+.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.nav-logo img{height:42px;width:42px;object-fit:cover;border-radius:10px;border:1.5px solid rgba(124,58,237,0.5);box-shadow:0 0 14px rgba(124,58,237,0.35)}
+.nav-logo-text{display:flex;flex-direction:column;line-height:1}
+.nav-logo-name{font-size:18px;font-weight:900;background:linear-gradient(135deg,#fff,var(--c1));-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:-0.5px}
+.nav-logo-sub{font-size:9px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:2px}
 .nav-links{display:flex;gap:28px;list-style:none}
 .nav-links a{color:var(--muted);text-decoration:none;font-size:14px;font-weight:500;transition:.3s}
 .nav-links a:hover{color:#fff}
@@ -178,7 +184,13 @@ footer{background:var(--bg);border-top:1px solid var(--glassborder);padding:60px
 
 <!-- NAV -->
 <nav>
-  <div class="nav-logo"><img src="https://i.ibb.co/cWpWzhB/xylofy-logo.jpg" alt="Xylofy"/></div>
+  <div class="nav-logo">
+    <img src="https://i.ibb.co/cWpWzhB/xylofy-logo.jpg" alt="Xylofy"/>
+    <div class="nav-logo-text">
+      <span class="nav-logo-name">Xylofy</span>
+      <span class="nav-logo-sub">Digital Agency</span>
+    </div>
+  </div>
   <ul class="nav-links">
     <li><a href="#services">Services</a></li>
     <li><a href="#packages">Packages</a></li>
